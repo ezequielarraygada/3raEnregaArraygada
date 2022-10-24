@@ -1,69 +1,51 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Oleo Script', cursive;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oleo Script', cursive;
+}
+
+.encabezado {
+    width: 100%;
+}
+.barra{
+    transition: all 2s;
+}
+.barra:hover {
+    background-color: rgba(92, 30, 235, 0.377);
+}
+footer img{
+    width: 20%;
+}
+.mapa{
+    width: 100%;
+    height: 50%;
+    transition: all 5s;
+}
+.mapa:hover{
+    height: 150%;
+}
+hr{
+    padding: 2%;
+}
+.galeria{
+    padding-top: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 1%;
 }
 body{
     background-image:url("../Imagenes/back.jpg");
     background-size: cover;
-    padding: 0.5%;
 }
-#menu{
-    background-color: rgba(46, 41, 71, 0.856);
-    height: 30px;
-}
-#menu ul{
-    list-style: none;
-    font-size: 0;
-}
-#menu li{
-    display: inline-block;
-    width: 20%;
-    position: relative;
-    font-size: 14px;
-    border-style: outset;
-    }
-#menu ul ul{
-    position: absolute;
-    display: none;
-}
-#menu ul ul li{
-    display: block;
-}
-#menu ul li:hover ul{
-    display: block;
-    background-color: rgba(46, 41, 71, 0.856);
-}
-#menu ul li:hover{
-    border-style: inset;
-}
-.submenu{
-    position: absolute;
-    display: block;
-    width: 98%;
-}
-.submenu li{
-    width: 100% !important;
-}
-#menu ul li a{
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 90%;
-    padding: 5px 40px;
-    color:white
-}
-section{
-    width: auto;
-    height: auto;    
-}
+
 #formulario{
     display: inline-block;
     background-color: white;
     height: auto;
     width: 550px;
-    padding: 40px;
+    margin-left: 3%;
+    margin-top: 2%;
 }
 #formulario fieldset{
     padding: 7px;
@@ -71,41 +53,14 @@ section{
 #formulario div{
     padding: 5px;
 }
-header img{
-    width: 100%;
-    height: auto;
+#ubicacion{
+    margin-right: 1%;
 }
 #tituloturnos{
     font-family: 'Nanum Pen Script', cursive;
     font-size: xx-large;
     text-align: center;
     background-size: contain;
-    background-color: transparent;
+    background-color: rgba(92, 30, 235, 0.082);
     margin-top: 20px;
-}
-#tituloturnos a{
-    font-family: 'Nanum Pen Script', cursive;
-}
-#redes img{
-    display: inline-block;
-    width: 50px;
-    height: auto;
-}
-#turnos{
-    display: inline-block;
-}
-#turnos iframe{
-    display: inline-block;
-    width: 550px;
-    height: 450px
-}
-#flockler-embed-183867a1be8030bb85b8c2abde563707{
-    margin-top: 140px;
-    margin-bottom: 80px;
-}
-footer{
-    margin-top: 10px;
-}
-hr{
-    margin-top: 140px;
 }
