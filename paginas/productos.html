@@ -1,55 +1,60 @@
-<!DOCTYPE html>
-<link rel="stylesheet" href="./CSS/estilos.css">
+<!doctype html>
 <html lang="en">
+
 <head>
-            <!--Google fonts-->
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-            
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Veterinaria Peyret</title>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/estilos.css">
 </head>
+
 <body>
     <header>
-        <img src="../Imagenes/Head.jpg" alt="head">
-        <nav id="menu">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/productos.html">Productos</a>
-                    <ul class="submenu">
-                        <li><a href="">Alimentos</a></li>
-                        <li><a href="">Cuidados</a></li>
-                        <li><a href="">Vacunas</a></li>
-                        <li><a href="">Medicación</a></li>
-                    </ul>
-                </li>    
-                <li><a href="./pages/conocenos.html">Conocenos</a></li>
-                <li><a href="./pages/consultas.html">Consultas</a></li>
-                <li><a href="./pages/pacientes_contentos.html">Pacientes Contentos</a></li>
-            </ul>
+        <img src="../Imagenes/Head.jpg" alt="encabezado" class="encabezado">
+        <nav class="nav nav-pills flex-column flex-sm-row">
+            <a class="flex-sm-fill text-sm-center nav-link barra" href="../index.html">Incio</a>
+            <a class="flex-sm-fill text-sm-center nav-link barra" href=".productos.html">Productos</a>
+            <a class="flex-sm-fill text-sm-center nav-link barra" href="#">Conocenos</a>
+            <a class="flex-sm-fill text-sm-center nav-link barra" href="./consultas.html">Consultas</a>
+            <a class="flex-sm-fill text-sm-center nav-link barra" href="#">Pacientes contentos</a>
         </nav>
     </header>
     <main>
-        <section>
-            <nav><!--Barra de navegacion lateral--></nav>
-        </section>
-        <section>
-            <!--Imagenes con efecto y link-->
-        </section>
+
     </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
 <hr>
 <footer>
-    <div id="redes">
-        <a href="https://api.whatsapp.com/send?phone=5491156604907" target="_blank"><img src="../Imagenes/logowsp.jpg" alt="redes__wsp"></a>
-        <img src="../Imagenes/logoinst.jpg" alt="redes__inst">
-        <img src="../Imagenes/logoface.jpg" alt="redes_face">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-sm-12">
+                <a href="https://api.whatsapp.com/send?phone=5491156604907" target="_blank"><img
+                        src="../Imagenes/logowsp.jpg" alt="WhatsApp"></a>
+                <img src="../Imagenes/logoinst.jpg" alt="Instagram">
+                <img src="../Imagenes/logoface.jpg" alt="Facebook">
+            </div>
+            <div class="col-md-9 col-sm-12">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13124.154541167314!2d-58.78043209632568!3d-34.67897436149064!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x25e381b38838c6d2!2sVeterinaria%20Peyret!5e0!3m2!1ses-419!2sar!4v1666614712132!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+            </div>
+        </div>
     </div>
 </footer>
+
 </html>
