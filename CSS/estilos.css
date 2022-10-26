@@ -14,25 +14,31 @@
 }
 
 .barra:hover {
-    background-color: rgba(92, 30, 235, 0.377);
+    background-color: #C4ACE1;
 }
 
-footer img {
-    width: 20%;
+.grises {
+    width: 25%;
+}
+
+.grises:hover {
+    filter: grayscale(100%);
+    transition: 1s;
 }
 
 .mapa {
     width: 100%;
     height: 50%;
-    transition: all 5s;
+    transition: all 3s;
 }
 
 .mapa:hover {
     height: 150%;
+    border-radius: 4%;
 }
 
 hr {
-    padding: 2%;
+    margin-top: 2%;
 }
 
 .galeria {
@@ -41,7 +47,7 @@ hr {
     margin-right: 3%;
     margin-bottom: 1%;
     border: 1px outset;
-    background-color: rgba(92, 30, 235, 0.377);
+    background-color: #9A60F8;
     padding: 1%;
     border-radius: 2%;
 }
@@ -53,11 +59,12 @@ body {
 
 #formulario {
     display: inline-block;
-    background-color: white;
+    background-color: #FBEAFF;
     height: auto;
     width: 550px;
     margin-left: 3%;
     margin-top: 2%;
+    border-radius: 5%;
 }
 
 #formulario fieldset {
@@ -69,10 +76,21 @@ body {
 }
 
 #ubicacion {
+    height: auto;
     margin-right: 1%;
+    border-radius: 5%;
+    margin-top: 2%;
 }
 
-#tituloturnos {
+#conocenos__ubi {
+    margin: 2%;
+    width: 95%;
+    height: 100%;
+    transition: 3s;
+    border-radius: 2%;
+}
+
+.titulo {
     font-family: 'Nanum Pen Script', cursive;
     font-size: xx-large;
     text-align: center;
@@ -80,43 +98,51 @@ body {
     background-color: rgba(92, 30, 235, 0.082);
     margin-top: 20px;
 }
-.contenedor{
+
+.contenedor {
     position: relative;
     text-align: center;
     overflow: hidden;
     transition: 4s;
 }
-.centrado{
+
+.centrado {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-decoration:overline;
+    text-decoration: overline;
     font-size: larger;
 }
-#productos__img{
+
+#productos__img {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     align-content: stretch;
 }
-.padreflex{
+
+.padreflex {
     display: flex;
     flex-direction: row;
     margin-right: 1%;
     margin-top: 2%;
     margin-bottom: 2%;
 }
-#productos__img img{
+
+#productos__img img {
     width: 100%;
     transition: 4s;
 }
+
 .contenedor:hover img {
-    -webkit-transform:scale(1.3);transform:scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
     filter: opacity(0.8);
 }
-.contenedor:hover .centrado{
+
+.contenedor:hover .centrado {
     font-size: x-large;
-    color: red;
+    color: #9A60F8;
     transition: 3s;
 }
