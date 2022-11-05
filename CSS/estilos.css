@@ -1,155 +1,131 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Oleo Script', cursive;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oleo Script', cursive; }
 
 .encabezado {
-    width: 100%;
-}
+  width: 100%; }
 
 .barra {
-    transition: all 2s;
-}
-
-.barra:hover {
-    background-color: #C4ACE1;
-}
+  transition: all 2s;
+  margin-top: 2%; }
+  .barra:hover {
+    background-color: #C4ACE1; }
 
 .grises {
-    width: 25%;
-}
-
-.grises:hover {
+  width: 25%; }
+  .grises:hover {
     filter: grayscale(100%);
-    transition: 1s;
-}
+    transition: 1s; }
 
 .mapa {
-    width: 100%;
-    height: 50%;
-    transition: all 3s;
-}
-
-.mapa:hover {
+  width: 100%;
+  height: 50%;
+  transition: all 3s; }
+  .mapa:hover {
     height: 150%;
-    border-radius: 4%;
-}
+    border-radius: 4%; }
 
 hr {
-    margin-top: 2%;
-}
+  margin-top: 2%; }
 
 .galeria {
-    margin-top: 1%;
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-bottom: 1%;
-    border: 1px outset;
-    background-color: #9A60F8;
+  margin-top: 3%;
+  margin-left: 3%;
+  border: 1px outset;
+  background-color: #889dc9;
+  padding: 1%;
+  border-radius: 2%;
+  width: 80%; }
+
+.noticias {
+  margin-top: 2%; }
+  .noticias .card {
     padding: 1%;
-    border-radius: 2%;
-}
+    width: 16rem; }
 
 body {
-    background-image: url("../Imagenes/back.jpg");
-    background-size: cover;
-}
+  background-image: url("../Imagenes/back.jpg");
+  background-size: cover; }
 
 #formulario {
-    display: inline-block;
-    background-color: #FBEAFF;
-    height: auto;
-    width: 550px;
-    margin-left: 3%;
-    margin-top: 2%;
-    border-radius: 5%;
-}
+  display: inline-block;
+  background-color: #FBEAFF;
+  height: auto;
+  width: 550px;
+  margin-left: 3%;
+  margin-top: 2%;
+  border-radius: 5%; }
 
 #formulario fieldset {
-    padding: 7px;
-}
+  padding: 7px; }
 
 #formulario div {
-    padding: 5px;
-}
+  padding: 5px; }
 
 #ubicacion {
-    height: auto;
-    margin-right: 1%;
-    border-radius: 5%;
-    margin-top: 2%;
-}
+  height: auto;
+  margin-right: 1%;
+  border-radius: 5%;
+  margin-top: 2%; }
 
 #conocenos__ubi {
-    margin: 2%;
-    width: 95%;
-    height: 100%;
-    transition: 3s;
-    border-radius: 2%;
-}
+  margin: 2%;
+  width: 95%;
+  height: 100%;
+  transition: 3s;
+  border-radius: 2%; }
 
 .titulo {
-    font-family: 'Nanum Pen Script', cursive;
-    font-size: xx-large;
-    text-align: center;
-    background-size: contain;
-    background-color: rgba(92, 30, 235, 0.082);
-    margin-top: 20px;
-}
-
-.contenedor {
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-    transition: 4s;
-}
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: xx-large;
+  text-align: center;
+  background-size: contain;
+  background-color: rgba(92, 30, 235, 0.082);
+  margin-top: 20px; }
 
 .centrado {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-decoration: overline;
-    font-size: larger;
-}
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: overline;
+  font-size: larger; }
 
 #productos__img {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    align-content: stretch;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-content: stretch; }
 
 .padreflex {
-    display: flex;
-    flex-direction: row;
-    margin-right: 1%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
+  display: flex;
+  flex-direction: row;
+  margin-right: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  justify-content: space-evenly; }
 
 #productos__img img {
-    width: 100%;
-    transition: 4s;
-}
+  width: 100%;
+  transition: 4s; }
 
-.contenedor:hover img {
+.contenedor {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  transition: 4s; }
+  .contenedor:hover img {
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
-    filter: opacity(0.8);
-}
-
-.contenedor:hover .centrado {
+    filter: opacity(0.8); }
+  .contenedor:hover .centrado {
     font-size: x-large;
     color: #9A60F8;
-    transition: 3s;
-}
+    transition: 3s; }
 
 @media screen and (max-width: 720px) {
-    .grises {
-        width: 15%;
-        margin: 3%;
-    }
-}
+  .grises {
+    width: 15%;
+    margin: 3%; } }
