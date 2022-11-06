@@ -41,6 +41,8 @@ hr {
   padding: 1%;
   border-radius: 2%;
   width: 40%; }
+  .galeria img {
+    width: auto; }
 
 .noticias {
   margin-top: 3%; }
