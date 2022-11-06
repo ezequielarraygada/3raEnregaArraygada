@@ -118,9 +118,8 @@ body {
   position: relative;
   text-align: center;
   overflow: hidden;
-  transition: 4s; }
-  .contenedor img {
-    width: 200%; }
+  transition: 4s;
+  width: max-content; }
   .contenedor:hover img {
     -webkit-transform: scale(1.3);
     transform: scale(1.3);

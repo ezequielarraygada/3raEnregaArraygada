@@ -146,10 +146,7 @@ body {
     text-align: center;
     overflow: hidden;
     transition: 4s;
-
-    img{
-        width: 200%;
-    }
+    width: max-content;
 
     &:hover img {
         -webkit-transform: scale(1.3);
