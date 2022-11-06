@@ -129,7 +129,6 @@ body {
     flex-direction: column;
     align-items: flex-end;
     align-content: stretch;
-    align-self: center;
 }
 
 .padreflex {
@@ -138,11 +137,9 @@ body {
     margin-right: 1%;
     margin-top: 2%;
     margin-bottom: 2%;
-    justify-content: space-between;
 }
 
 #productos__img img {
-    width: 100%;
     transition: 4s;
 }
 
@@ -153,6 +150,7 @@ body {
     transition: 4s;
     width: max-content;
     align-self: center;
+    width:max-content ;
 
     &:hover img {
         -webkit-transform: scale(1.3);
