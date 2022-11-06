@@ -49,13 +49,13 @@ hr {
     background-color: #889dc9;
     padding: 1%;
     border-radius: 2%;
-    width: 80%;
-}
+    width: 40%;
+    }
 
 .noticias{
-    margin-top: 2%;
+    margin-top: 3%;
     .card{
-        padding: 1%;
+        padding: 2%;
         width: 16rem;
     }
 }
@@ -63,7 +63,6 @@ hr {
 body {
     background-image: url("../Imagenes/back.jpg");
     background-size: cover;
-
     }
 
 #formulario {
@@ -130,7 +129,7 @@ body {
     margin-right: 1%;
     margin-top: 2%;
     margin-bottom: 2%;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 #productos__img img {
@@ -156,10 +155,16 @@ body {
         transition: 3s;
     }
 }
-
-@media screen and (max-width: 720px) {
+.row{
+    justify-content: space-around;
+}
+@media screen and (max-width: 770px) {
     .grises {
         width: 15%;
         margin: 3%;
+    }
+    .galeria
+    {
+        width: 80%;
     }
 }
