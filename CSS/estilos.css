@@ -143,4 +143,11 @@ body {
   .noticias {
     width: 80%;
     padding: 2%;
-    margin-left: 2%; } }
+    margin-left: 2%; }
+  .contenedor {
+    width: 100%;
+    align-self: flex-start; }
+  .padreflex {
+    width: 100%; }
+  #productos__img {
+    width: 100%; } }
