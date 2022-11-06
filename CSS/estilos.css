@@ -128,7 +128,26 @@ body {
     filter: opacity(0.8); }
   .contenedor:hover .centrado {
     font-size: x-large;
-    color: #9A60F8;
+    color: #C4ACE1;
+    transition: 3s; }
+
+.galeria__pc {
+  overflow: hidden;
+  transition: 4s;
+  margin-top: 3%;
+  text-align: center;
+  align-self: center;
+  position: relative;
+  align-self: center; }
+  .galeria__pc .centrado {
+    display: none; }
+  .galeria__pc:hover a img {
+    filter: opacity(0.5);
+    transition: 4s; }
+  .galeria__pc:hover .centrado {
+    font-size: xx-large;
+    display: flex;
+    color: black;
     transition: 3s; }
 
 .row {
