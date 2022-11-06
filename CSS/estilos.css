@@ -2,16 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Oleo Script', cursive; }
+  font-family: 'ubuntu', cursive; }
 
 .encabezado {
   width: 100%; }
 
 .barra {
   transition: all 2s;
-  margin-top: 2%; }
+  margin-top: 2%;
+  color: black;
+  font-size: large; }
   .barra:hover {
-    background-color: #C4ACE1; }
+    background-color: #C4ACE1;
+    font-size: larger; }
 
 .grises {
   width: 25%; }
@@ -78,7 +81,7 @@ body {
   border-radius: 2%; }
 
 .titulo {
-  font-family: 'Nanum Pen Script', cursive;
+  font-family: 'ubuntu', cursive;
   font-size: xx-large;
   text-align: center;
   background-size: contain;
@@ -116,6 +119,8 @@ body {
   text-align: center;
   overflow: hidden;
   transition: 4s; }
+  .contenedor img {
+    width: 200%; }
   .contenedor:hover img {
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
@@ -133,4 +138,8 @@ body {
     width: 15%;
     margin: 3%; }
   .galeria {
-    width: 80%; } }
+    width: 80%; }
+  .noticias {
+    width: 80%;
+    padding: 2%;
+    margin-left: 2%; } }
