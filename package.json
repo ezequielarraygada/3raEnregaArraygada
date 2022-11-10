@@ -1,7 +1,7 @@
 {
   "name": "veterinariapeyret",
   "version": "1.0.0",
-  "description": "",
+  "description": "En Veterinaria Peyret nuestra misión es estar al servicio de la salud de las mascotas y acompañarlos de la mejor manera en cada etapa de sus vidas. Mas de 15 años de experiencia nos avalan.",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {

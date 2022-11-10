@@ -12,6 +12,9 @@
   background-color: #889dc9;
   font-size: larger; }
 
+.submenu {
+  background-color: #a3abbb81; }
+
 .grises {
   width: 25%; }
   .grises:hover {
@@ -83,7 +86,7 @@ body {
   font-size: xx-large;
   text-align: center;
   background-size: contain;
-  background-color: rgba(92, 30, 235, 0.082);
+  background-color: #8560b3;
   margin-top: 20px; }
 
 .centrado {
@@ -124,7 +127,7 @@ body {
     filter: opacity(0.8); }
   .contenedor:hover .centrado {
     font-size: x-large;
-    color: #2b0c52;
+    color: #8560b3;
     transition: 3s; }
 
 .galeria__pc {
@@ -143,7 +146,7 @@ body {
   .galeria__pc:hover .centrado {
     font-size: xx-large;
     display: flex;
-    color: black;
+    color: #8560b3;
     transition: 3s; }
 
 .row {

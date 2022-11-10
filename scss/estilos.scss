@@ -5,14 +5,25 @@
     font-family: 'ubuntu', cursive;
 }
 
+$paleta: (
+    color1: #889dc9,
+    color2: #8560b3,
+    color3: #FBEAFF,
+    color4: #a3abbb81
+);
+
 .encabezado {
     width: 100%;
 }
 
 .barra {
     transition: all 2s;
-    background-color: #889dc9;
+    background-color: map-get($paleta, color1);
     font-size: larger;
+}
+
+.submenu {
+    background-color: map-get($paleta, color4);
 }
 
 .grises {
@@ -43,7 +54,7 @@ hr {
     margin-top: 3%;
     margin-left: 3%;
     border: 1px outset;
-    background-color: #889dc9;
+    background-color: map-get($paleta, color1);
     padding: 1%;
     border-radius: 2%;
     width: 40%;
@@ -69,7 +80,7 @@ body {
 
 #formulario {
     display: inline-block;
-    background-color: #FBEAFF;
+    background-color: map-get($paleta, color3);
     height: auto;
     width: 550px;
     margin-left: 3%;
@@ -105,7 +116,7 @@ body {
     font-size: xx-large;
     text-align: center;
     background-size: contain;
-    background-color: rgba(92, 30, 235, 0.082);
+    background-color: map-get($paleta, color2);
     margin-top: 20px;
 }
 
@@ -114,7 +125,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-decoration:overline;
+    text-decoration: overline;
     font-size: larger;
 }
 
@@ -154,12 +165,12 @@ body {
 
     &:hover .centrado {
         font-size: x-large;
-        color: #2b0c52;
+        color: map-get($paleta, color2);
         transition: 3s;
     }
 }
 
-.galeria__pc{
+.galeria__pc {
     overflow: hidden;
     transition: 4s;
     margin-top: 3%;
@@ -168,18 +179,19 @@ body {
     position: relative;
     align-self: center;
 
-    .centrado{
+    .centrado {
         display: none;
     }
-  
-    &:hover a img{
+
+    &:hover a img {
         filter: opacity(0.5);
         transition: 4s;
     }
-    &:hover .centrado{
+
+    &:hover .centrado {
         font-size: xx-large;
-        display: flex; 
-        color: black;
+        display: flex;
+        color: map-get($paleta, color2);
         transition: 3s;
     }
 
