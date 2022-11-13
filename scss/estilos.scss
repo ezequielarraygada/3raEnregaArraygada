@@ -82,7 +82,7 @@ body {
     display: inline-block;
     background-color: map-get($paleta, color3);
     height: auto;
-    width: 550px;
+    width: 500px;
     margin-left: 3%;
     margin-top: 2%;
     border-radius: 5%;
@@ -239,7 +239,12 @@ body {
     #ubicacion{
         display: none;
     }
-  
+    #formulario{
+        width: 400px;
+        margin: 0%;
+        padding: 0%;
+    }
+
 
 }
 @media screen and (max-width: 320px) {
@@ -248,5 +253,10 @@ body {
     }
     #ubicacion{
         display: none;
+    }
+    #formulario{
+        width: 320px;
+        margin: 0%;
+        padding: 0%;
     }
 }
