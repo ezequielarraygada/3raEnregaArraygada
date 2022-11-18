@@ -1,5 +1,5 @@
 {
-  "name": "preentrega3arraygada",
+  "name": "pfarraygada",
   "version": "1.0.0",
   "description": "En Veterinaria Peyret nuestra misión es estar al servicio de la salud de las mascotas y acompañarlos de la mejor manera en cada etapa de sus vidas. Mas de 15 años de experiencia nos avalan.",
   "main": "index.js",
@@ -15,12 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ezequielarraygada/PreEntrega3Arraygada.git"
+    "url": "git+https://github.com/ezequielarraygada/PFArraygada.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ezequielarraygada/PreEntrega3Arraygada.git/issues"
+    "url": "https://github.com/ezequielarraygada/PFArraygada.git/issues"
   },
-  "homepage": "https://github.com/ezequielarraygada/PreEntrega3Arraygada.git#readme"
+  "homepage": "https://github.com/ezequielarraygada/PFArraygada.git#readme"
 }
