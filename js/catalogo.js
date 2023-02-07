@@ -47,7 +47,7 @@ const form = document.getElementById("IngresoProductos")
 
 // JSON
 
-localStorage.setItem("Lista", JSON.stringify(ListaProductos))
+// localStorage.setItem("Lista", JSON.stringify(ListaProductos))
 
 // ListaProductos = JSON.parse(localStorage.getItem(Lista))
 
