@@ -26,13 +26,13 @@ class Carrito {
 //Array ListaProductos y primeros productos.
 
 const producto1 = new Producto("1", "Vivaz 20kg", "Alimentos", "Perros", "Adultos", "$4.850", "nodisponible.jpg")
-const producto2 = new Producto("2", "Vivaz 10kg", "Alimentos", "Perros", "Adultos", "$3.000", "nodisponible.jpg")
-const producto3 = new Producto("3", "Prof. Vet 20kgs", "Alimentos", "Perros", "Adultos", "$5.500", "profvet20ksperros.jpg")
-const producto4 = new Producto("4", "Prof. Vet 10kgs", "Alimentos", "Gatos", "Adultos", "$5.000", "nodisponible.jpg")
-const producto5 = new Producto("5", "Prof. Vet Urinari 2kgs", "Alimentos", "Gatos", "Tratamiento especial", "$2.000", "nodisponible.jpg")
-const producto6 = new Producto("6", "Pipeta perros 2-5kgs", "Pipeta", "Perros", "Medianos", "$1.500", "nodisponible.jpg")
-const producto7 = new Producto("7", "Pipeta gatos", "Cuidados", "Gatos adultos", "Antipulgas y garrapatas", "$1.000", "nodisponible.jpg")
-const producto8 = new Producto("8", "Anticonceptivos gatos", "Medicación", "Gatos", "Pastillas anticonceptivas", "$1.600", "nodisponible.jpg")
+const producto2 = new Producto("2", "Vivaz 10kg", "Alimentos", "Perros", "Adultos", "3.000", "nodisponible.jpg")
+const producto3 = new Producto("3", "Prof. Vet 20kgs", "Alimentos", "Perros", "Adultos", "5.500", "profvet20ksperros.jpg")
+const producto4 = new Producto("4", "Prof. Vet 10kgs", "Alimentos", "Gatos", "Adultos", "5.000", "nodisponible.jpg")
+const producto5 = new Producto("5", "Prof. Vet Urinari 2kgs", "Alimentos", "Gatos", "Tratamiento especial", "2.000", "nodisponible.jpg")
+const producto6 = new Producto("6", "Pipeta perros 2-5kgs", "Pipeta", "Perros", "Medianos", "1.500", "nodisponible.jpg")
+const producto7 = new Producto("7", "Pipeta gatos", "Cuidados", "Gatos adultos", "Antipulgas y garrapatas", "1.000", "nodisponible.jpg")
+const producto8 = new Producto("8", "Anticonceptivos gatos", "Medicación", "Gatos", "Pastillas anticonceptivas", "1.600", "nodisponible.jpg")
 
 const ListaProductos = [producto1, producto2, producto3, producto4, producto5, producto6, producto7, producto8]
 
@@ -77,10 +77,10 @@ function MostrarCatalogo(array) {
             <p>${Producto.detalle}</p>
           <li>${Producto.clase}</li>
             <li>${Producto.tipo}</li>
-            <li>${Producto.precio}</li>
+            <li>$ ${Producto.precio}</li>
           </ul>
           <button id="AgregarCarritoBT${Producto.id}" class="BTAgregar btn btn-outline-success">Agregar al carrito</button>
-          `
+    </div>`
     Publicacion.classList.add("publicacion", "col-12", "col-md-6", "col-lg-4", "mb-3")
     Catalogo.appendChild(Publicacion)
     const BTAgregarCarrito = document.getElementById(`AgregarCarritoBT${Producto.id}`)
