@@ -250,6 +250,7 @@ body {
   border: 2px solid;
   margin: 1%;
   padding: 1%;
+  background-color: #CDCDE7;
 }
 .publicacion img {
   border-radius: 5%;
@@ -259,15 +260,19 @@ body {
   text-align: center;
   font-family: "ubuntu", cursive;
   font-size: larger;
+  font-weight: 600;
 }
 .publicacion div li {
   margin-left: 1%;
   list-style: none;
+  font-weight: 600;
+  font-family: "ubuntu", cursive;
 }
 .publicacion div p {
   text-align: center;
   font-family: "ubuntu", cursive;
   font-size: large;
+  font-weight: 600;
 }
 
 #IngresoProductos {

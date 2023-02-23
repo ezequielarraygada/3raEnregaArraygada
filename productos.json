@@ -1,0 +1,83 @@
+
+[
+{
+    "id": 1,
+    "producto": "Vivaz 20kg",
+    "clase": "Alimentos",
+    "tipo": "Perros",
+    "detalle": "Adultos",
+    "precio": "4.850",
+    "imagen": "nodisponible.jpg"
+
+},
+{
+    "id": 2,
+    "producto": "Vivaz 10kg",
+    "clase": "Alimentos",
+    "tipo": "Perros",
+    "detalle": "Adultos",
+    "precio": "3.000",
+    "imagen": "nodisponible.jpg"
+
+},
+{
+    "id": 3,
+    "producto": "Prof. Vet 20kgs",
+    "clase": "Alimentos",
+    "tipo": "Perros",
+    "detalle": "Adultos",
+    "precio": "5.500",
+    "imagen": "profvet20ksperros.jpg"
+
+},
+{
+    "id": 4,
+    "producto": "Prof. Vet 10kgs",
+    "clase": "Alimentos",
+    "tipo": "Gatos",
+    "detalle": "Adultos",
+    "precio": "5.000",
+    "imagen": "nodisponible.jpg"
+
+},
+{
+    "id": 5,
+    "producto": "Prof. Vet Urinari 2kgs",
+    "clase": "Alimentos",
+    "tipo": "Gatos",
+    "detalle": "Tratamiento especial",
+    "precio": "2.000",
+    "imagen": "nodisponible.jpg"
+
+},
+{
+    "id": 6,
+    "producto": "Pipeta perros 2-5kgs",
+    "clase": "Cuidados",
+    "tipo": "Perros",
+    "detalle": "Medianos",
+    "precio": "1.500",
+    "imagen": "nodisponible.jpg"
+
+},
+{
+    "id": 7,
+    "producto": "Pipeta perros 2-5kgs",
+    "clase": "Cuidados",
+    "tipo": "Perros medianos",
+    "detalle": "Antipulgas y garrapatas",
+    "precio": "1.500",
+    "imagen": "nodisponible.jpg"
+
+},
+{
+    "id": 8,
+    "producto": "Pipeta gatos",
+    "clase": "Cuidados",
+    "tipo": "Gatos medianos",
+    "detalle": "Antipulgas y garrapatas",
+    "precio": "1.500",
+    "imagen": "nodisponible.jpg"
+
+}
+]

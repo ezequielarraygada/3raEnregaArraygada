@@ -2,7 +2,7 @@
   "name": "pfarraygada",
   "version": "1.0.0",
   "description": "En Veterinaria Peyret nuestra misión es estar al servicio de la salud de las mascotas y acompañarlos de la mejor manera en cada etapa de sus vidas. Mas de 15 años de experiencia nos avalan.",
-  "main": "index.js",
+  "main": "catalogo.js",
   "dependencies": {},
   "devDependencies": {
     "node-sass": "^7.0.3",
