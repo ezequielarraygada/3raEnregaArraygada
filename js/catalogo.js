@@ -43,32 +43,31 @@ const ListaProductos = [producto1, producto2, producto3, producto4, producto5, p
 const Catalogo = document.getElementById("catalogo")
 const BTVerCatalogo = document.getElementById("BTVerCatalogo")
 const BTOcultarCatalogo = document.getElementById("BTOcultarCatalogo")
-// const BTIrAAgregar = document.getElementById("BTIrAAgregar")
-// const form = document.getElementById("IngresoProductos")
+const form = document.getElementById("IngresoProductos")
 
 // JSON
 
-const Lista = JSON.parse(localStorage.getItem("Lista"))
+// localStorage.setItem("Lista", JSON.stringify(ListaProductos))
 
+// ListaProductos = JSON.parse(localStorage.getItem(Lista))
 
 
 // Eventos
 
-// form.addEventListener("submit", (e) => {
-//   e.preventDefault()
-//   AgregarProducto(ListaProductos)
-//   console.log("Boton Agregar Funciona")
-// })
-// BTIrAAgregar.addEventListener("click", )
-BTVerCatalogo.addEventListener("click", ()=>{MostrarCatalogo(Lista)})
-BTOcultarCatalogo.addEventListener("click", ()=>{Catalogo.innerHTML = ""})
+form.addEventListener("submit", (e) => {
+  e.preventDefault()
+  AgregarProducto(ListaProductos)
+  console.log("Boton Agregar Funciona")
+})
+
+BTVerCatalogo.addEventListener("click", () => {MostrarCatalogo(ListaProductos)})
+BTOcultarCatalogo.addEventListener("click", () => {Catalogo.innerHTML = ""})
 
 //Funciones
 
 function MostrarCatalogo(array) {
   Catalogo.innerHTML = ""
-    for (let Producto of Lista) {
-  // for (let Producto of ListaProductos) {
+  for (let Producto of ListaProductos) {
     const Publicacion = document.createElement("div")
     Publicacion.innerHTML = `
     <img src="../imagenes/ecommerce/${Producto.imagen}" alt="Imagen">
@@ -91,25 +90,25 @@ function MostrarCatalogo(array) {
 
 
 
-// function AgregarProducto(array) {
-//   let IProducto = document.getElementById("ProductoI")
-//   let IClase = document.getElementById("ClaseI")
-//   let ITipo = document.getElementById("TipoI")
-//   let IDetalle = document.getElementById("DetalleI")
-//   let IPrecio = document.getElementById("PrecioI")
+function AgregarProducto(array) {
+  let IProducto = document.getElementById("ProductoI")
+  let IClase = document.getElementById("ClaseI")
+  let ITipo = document.getElementById("TipoI")
+  let IDetalle = document.getElementById("DetalleI")
+  let IPrecio = document.getElementById("PrecioI")
 
-//   const NuevoProducto = new Producto(ListaProductos.length + 1, IProducto.value,
-//     IClase.value, ITipo.value, IDetalle.value, parseInt(IPrecio.value), "nodisponible.jpg")
-//   console.log(NuevoProducto)
+  const NuevoProducto = new Producto(ListaProductos.length + 1, IProducto.value,
+    IClase.value, ITipo.value, IDetalle.value, parseInt(IPrecio.value), "nodisponible.jpg")
+  console.log(NuevoProducto)
 
-//   array.push(NuevoProducto)
-//   console.log(array)
+  array.push(NuevoProducto)
+  console.log(array)
 
-//   localStorage.setItem("Lista", JSON.stringify(array)) 
-//   MostrarCatalogo(array)
+  localStorage.setItem("Lista", JSON.stringify(array)) 
+  MostrarCatalogo(array)
 
-//   IProducto.value = ""
-//   IDetalle.value = ""
-//   IPrecio.value = ""
-// }
+  IProducto.value = ""
+  IDetalle.value = ""
+  IPrecio.value = ""
+}
 
