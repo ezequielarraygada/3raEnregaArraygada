@@ -3,7 +3,8 @@
 const Catalogo = document.getElementById("catalogo")
 const BTVerCatalogo = document.getElementById("BTVerCatalogo")
 const BTOcultarCatalogo = document.getElementById("BTOcultarCatalogo")
-const BTOrdenPrecio = document.getElementById("BTOrdenPrecio")
+const BTOrdenPrecioMe = document.getElementById("BTOrdenPrecioMe")
+const BTOrdenPrecioMa = document.getElementById("BTOrdenPrecioMa")
 
 
 
@@ -11,13 +12,14 @@ const BTOrdenPrecio = document.getElementById("BTOrdenPrecio")
 
 BTVerCatalogo.addEventListener("click", () => { MostrarCatalogo(Lista) })
 BTOcultarCatalogo.addEventListener("click", () => { Catalogo.innerHTML = "" })
-BTOrdenPrecio.addEventListener("click", () => {OrdenarPorPrecio(Lista)})
+BTOrdenPrecioMe.addEventListener("click", () => { OrdenarPorPrecioMe(Lista) })
+BTOrdenPrecioMa.addEventListener("click", () => { OrdenarPorPrecioMa(Lista) })
 
 //Funciones
 
 function MostrarCatalogo(array) {
   Catalogo.innerHTML = ""
-  for (let Producto of Lista) {
+  for (let Producto of array) {
     const Publicacion = document.createElement("div")
     Publicacion.innerHTML = `
     <img src="../imagenes/ecommerce/${Producto.imagen}" alt="Imagen">
@@ -33,15 +35,19 @@ function MostrarCatalogo(array) {
     Publicacion.classList.add("publicacion", "col-12", "col-md-6", "col-lg-4", "mb-3")
     Catalogo.appendChild(Publicacion)
     const BTAgregarCarrito = document.getElementById(`AgregarCarritoBT${Producto.id}`)
-    BTAgregarCarrito.addEventListener("click", () => { })
+    BTAgregarCarrito.addEventListener("click", () => { console.log(`El producto ${Producto.producto} ah sido agregado al carrito.`) })
   }
 }
 
-function OrdenarPorPrecio(array) {
+function OrdenarPorPrecioMe(array) {
   const PorPrecio = [].concat(array)
   PorPrecio.sort((p1,p2) => p1.precio - p2.precio)
   MostrarCatalogo(PorPrecio)
 }
 
-
+function OrdenarPorPrecioMa(array) {
+  const PorPrecio = [].concat(array)
+  PorPrecio.sort((p1,p2) => p2.precio - p1.precio)
+  MostrarCatalogo(PorPrecio)
+}
 
