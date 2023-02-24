@@ -5,6 +5,8 @@ const BTVerCatalogo = document.getElementById("BTVerCatalogo")
 const BTOcultarCatalogo = document.getElementById("BTOcultarCatalogo")
 const BTOrdenPrecioMe = document.getElementById("BTOrdenPrecioMe")
 const BTOrdenPrecioMa = document.getElementById("BTOrdenPrecioMa")
+const TextoCargando = document.getElementById("TextoCargando")
+const Ruedita = document.getElementById("Ruedita")
 
 
 
@@ -51,3 +53,11 @@ function OrdenarPorPrecioMa(array) {
   MostrarCatalogo(PorPrecio)
 }
 
+// Loader
+
+setTimeout(()=>{
+  TextoCargando.innerHTML = ""
+  Ruedita.remove()
+  MostrarCatalogo(Lista)
+
+}, 2000)
