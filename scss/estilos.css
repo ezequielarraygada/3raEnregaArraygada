@@ -129,7 +129,7 @@ body {
 }
 
 .padreflex {
-  display: flex wrap;
+  display: flex;
   flex-direction: row;
   margin-right: 1%;
   margin-top: 2%;
@@ -233,71 +233,4 @@ body {
     margin: 0%;
     padding: 0%;
   }
-}
-#catalogo {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  overflow: hidden;
-  justify-content: space-around;
-  width: auto;
-}
-
-.publicacion {
-  width: auto;
-  align-self: center;
-  border-radius: 5%;
-  border: 2px solid;
-  margin: 1%;
-  padding: 1%;
-  background-color: #CDCDE7;
-}
-.publicacion img {
-  border-radius: 5%;
-  margin-bottom: 3%;
-}
-.publicacion div h5 {
-  text-align: center;
-  font-family: "ubuntu", cursive;
-  font-size: larger;
-  font-weight: 600;
-}
-.publicacion div li {
-  margin-left: 1%;
-  list-style: none;
-  font-weight: 600;
-  font-family: "ubuntu", cursive;
-}
-.publicacion div p {
-  text-align: center;
-  font-family: "ubuntu", cursive;
-  font-size: large;
-  font-weight: 600;
-}
-
-#IngresoProductos {
-  padding: 5%;
-  padding-top: 0%;
-  margin: 1%;
-  border: outset 1px rgba(133, 96, 179, 0.5333333333);
-}
-#IngresoProductos label {
-  align-self: center;
-}
-#IngresoProductos input {
-  width: fit-content;
-  align-self: center;
-  border: 1px solid black;
-}
-#IngresoProductos select {
-  border: 1px solid black;
-}
-
-.BTAgregar {
-  margin-left: 15%;
-}
-
-#botones {
-  margin-top: 1%;
-  margin-left: 4%;
 }/*# sourceMappingURL=estilos.css.map */
